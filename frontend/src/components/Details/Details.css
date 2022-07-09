@@ -1,0 +1,28 @@
+.details-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.details-row span {
+  min-width: 30%;
+  text-transform: uppercase;
+}
+.details-row p {
+  border-bottom: dotted 1px rgb(141, 141, 141);
+}
+.details-row div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.details-card {
+  padding: 5px 10px;
+  border-radius: 60px;
+  cursor: pointer;
+  border: solid 1px rgb(141, 141, 141);
+  color:rgb(204, 204, 204)
+}
+.details-card:hover {
+  border: solid 1px rgb(225, 225, 225);
+  color:rgb(225, 225, 225);
+}

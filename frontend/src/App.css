@@ -2,4 +2,31 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  background: rgb(21, 26, 31);
+  color: #fff;
+}
+.App {
+  padding: 0;
+}
+p {
+  color: rgb(230, 230, 230);
+}
+.fa {
+  font-family: 'Font Awesome 5 Free';
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  visibility: none;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 119, 0, 0.6);
+  width: 7px;
+  border-radius: 10px;
 }

@@ -1,0 +1,45 @@
+.cast-card {
+  position: relative;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 60px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: solid 1px rgb(141, 141, 141);
+  color:rgb(204, 204, 204)
+}
+.cast-card:hover {
+  border: solid 1px rgb(225, 225, 225);
+  color:rgb(225, 225, 225);
+}
+.cast-card p {
+  color: inherit;
+}
+.cast-card .tooltip {
+  visibility: hidden;
+  width: fit-content;
+  bottom: 120%;
+  left: 0;
+  padding: 10px 15px;
+  font-size: 14px;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 60px;
+  position: absolute;
+  z-index: 1;
+  color: #fff;
+  background-color: rgb(12, 14, 17);
+}
+.cast-card .tooltip::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  margin-left: -5px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: rgb(12, 14, 17) transparent transparent transparent;
+}
+.cast-card:hover .tooltip {
+  visibility: visible;
+}
