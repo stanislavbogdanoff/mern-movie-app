@@ -7,7 +7,6 @@ import './Banner.css'
 const baseUrl = 'https://image.tmdb.org/t/p/original'
 
 const Banner = ({data}) => {
-  console.log(data)
   const imageUrl = `https://image.tmdb.org/t/p/original${data?.backdrop_path}`
 
   const scrollToContent = () => {
@@ -37,7 +36,6 @@ const Banner = ({data}) => {
           <div className="title">
             <h2>{data?.title}</h2>
             <p>{data?.release_date.slice(0, 4)}</p>
-            {data?.original_title !== data?.title && <i>/ {data?.original_title}</i>}
           </div>
 
           {
@@ -52,7 +50,7 @@ const Banner = ({data}) => {
             <button 
               className='play-btn'
             >
-              More
+              Details
             </button>
           </Link>
 

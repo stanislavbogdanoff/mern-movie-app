@@ -7,10 +7,10 @@ import {
   useGetHorrorMoviesQuery,
   useGetRomanceMoviesQuery,
   useGetDocumentariesQuery 
-} from '../features/api/apiSlice'
+} from '../../features/api/apiSlice'
 
-import MovieRow from '../components/MovieRow/MovieRow'
-import Banner from '../components/Banner/Banner'
+import MovieRow from '../../components/MovieRow/MovieRow'
+import Banner from '../../components/Banner/Banner'
 
 import './HomePage.css'
 
@@ -24,8 +24,6 @@ const HomePage = () => {
   const { data: romanceData } = useGetRomanceMoviesQuery()
   const { data: documentaryData } = useGetDocumentariesQuery()
 
-  console.log(topData)
-
   const trendingList = data?.results
   const topList = topData?.results
   const actionList = actionData?.results
@@ -34,10 +32,12 @@ const HomePage = () => {
   const romanceList = romanceData?.results
   const documentaryList = documentaryData?.results
 
+  const randomMovie = Math.floor(Math.random()*20)
+
   return (
-    <section className="homepage">
+    <main className="homepage">
       {
-        topList && <Banner data={topList[Math.floor(Math.random()*10)]} />
+        topList && <Banner data={topList[randomMovie]} />
       }
       <div className="movie-list">
         {
@@ -62,7 +62,7 @@ const HomePage = () => {
           documentaryList && <MovieRow title='Documentary' moviesList={documentaryList} ind={'row-docum'} />
         }
       </div>
-    </section>
+    </main>
   )
 }
 

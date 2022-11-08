@@ -1,9 +1,27 @@
 import React from 'react'
 import './Details.css'
 
-const Details = ({genres, studios, countries, languages}) => {
+const Details = ({title, origTitle, length, genres, studios, countries, languages}) => {
   return (
     <div className="details-box">
+      {origTitle !== title &&
+        <span className="details-row">
+          <span><p>Original Title</p></span>
+          <div>
+            <div className="details-card">
+              {origTitle}
+            </div>
+          </div>
+        </span>
+      }
+      <span className="details-row">
+        <span><p>Length</p></span>
+        <div>
+          <div className="details-card">
+            {length} min
+          </div>
+        </div>
+      </span>
       <span className="details-row">
         <span><p>Genres</p></span>
         <div>

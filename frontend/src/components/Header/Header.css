@@ -9,7 +9,7 @@ header {
   z-index: 100;
 }
 header font {
-  color: rgb(255, 119, 0);
+  color: rgb(255, 153, 0);
 }
 header ul {
   display: flex;
@@ -27,9 +27,9 @@ header ul li a {
   color: #fff;
 }
 header ul li a:hover {
-  color:rgb(255, 119, 0);
+  color:rgb(255, 153, 0);
 }
 header ul li a.active {
-  color:rgb(255, 119, 0);
-  border-bottom: solid 1px rgb(255, 119, 0);
+  color:rgb(255, 153, 0);
+  border-bottom: solid 1px rgb(255, 153, 0);
 }

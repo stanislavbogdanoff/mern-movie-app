@@ -1,0 +1,31 @@
+.dashpage {
+  padding: 150px 5% 150px 0;
+}
+.dash-content {
+  display: flex;
+  gap: 30px;
+}
+.watchlist-box, .ratings-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.dash-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.dash-menu-btn {
+  font-weight: 700;
+  font-size: 40px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.6);
+}
+.dash-menu-btn.active {
+  color: rgba(255, 255, 255, 0.9);
+}

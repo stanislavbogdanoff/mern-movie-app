@@ -1,32 +1,10 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
 import MovieCard from './MovieCard'
-
-import { CaretLeftFilled, CaretRightFilled } from '@ant-design/icons'
 
 import './MovieRow.css'
 
 const MovieRow = ({title, moviesList, ind}) => {
-
-  const movieRow = document.getElementById(`${ind}`)
-
-  const scrollLeft = (e) => {
-    e.preventDefault()
-    movieRow.scrollBy({
-      top: 0,
-      left: -630,
-      behavior: 'smooth'
-    })
-  }
-
-  const scrollRight = (e) => {
-    e.preventDefault()
-    movieRow.scrollBy({
-      top: 0,
-      left: 630,
-      behavior: 'smooth'
-    })
-  }
 
   return (
     <section>
@@ -36,10 +14,6 @@ const MovieRow = ({title, moviesList, ind}) => {
       </h2>
 
       <div className="row-box">
-
-        <button onClick={scrollLeft} id='left'>
-          <CaretLeftFilled />
-        </button>
 
         <div className="movies-row" id={ind}>
 
@@ -52,10 +26,6 @@ const MovieRow = ({title, moviesList, ind}) => {
           }
 
         </div>
-
-        <button onClick={scrollRight} id='right'>
-          <CaretRightFilled />
-        </button>
 
       </div>
 

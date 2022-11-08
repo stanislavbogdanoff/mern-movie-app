@@ -2,10 +2,12 @@
   padding: 100px 10%;
 }
 .results-box {
+  width: fit-content;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .results-box a {
   height: fit-content;
@@ -16,24 +18,32 @@
   text-decoration: underline;
 }
 .search-input {
-  width: 30%;
-  padding: 5px 20px;
-  font-size: 14px;
+  width: 400px;
+  padding: 5px;
+  font-size: 18px;
   font-family: 'Montserrat', sans-serif;
-  border: solid 1px rgb(91, 91, 91);
-  border-radius: 60px;
+  border: none;
+  border-bottom: solid 1px #fff;
   background: none;
   color: #fff;
 }
 .search-input:focus {
-  border: solid 1px transparent;
   outline: none;
   background-color: rgba(255, 255, 255, 0.236);  
 }
 .searchpage form {
   padding: 50px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 30px;
+}
+.searchpage button {
+  padding: 10px;
+  border-radius: 100%;
+}
+.searchpage span {
+  display: flex;
   gap: 30px;
 }

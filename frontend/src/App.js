@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import HomePage from './pages/HomePage'
-import DashboardPage from './pages/DashboardPage'
-import SearchPage from './pages/SearchPage/SearchPage';
-import LoginPage from './pages/LoginPage';
-import RegisterPage from './pages/RegisterPage';
+import HomePage from './pages/Home/HomePage'
+import DashboardPage from './pages/Dashboard/DashboardPage'
+import SearchPage from './pages/Search/SearchPage';
+import LoginPage from './pages/Login/LoginPage';
+import RegisterPage from './pages/Register/RegisterPage';
 import DetailsPage from './pages/Details/DetailsPage';
 
 import Header from './components/Header/Header';
@@ -19,9 +19,9 @@ function App() {
           <Route path='/' element={<HomePage />} />
           <Route path='/search' element={<SearchPage />} />
           <Route path='/details/:id' element={<DetailsPage />} />
-          {/* <Route path='/' element={<DashboardPage />} />
+          <Route path='/dashboard' element={<DashboardPage />} />
           <Route path='/login' element={<LoginPage />} />
-          <Route path='/register' element={<RegisterPage />} /> */}
+          <Route path='/register' element={<RegisterPage />} />
         </Routes>
       </Router>
     </div>

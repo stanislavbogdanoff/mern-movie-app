@@ -14,19 +14,19 @@ body {
   padding: 0;
 }
 p {
-  color: rgb(230, 230, 230);
+  color: rgba(230, 230, 230, 0.7);
 }
 .fa {
   font-family: 'Font Awesome 5 Free';
 }
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 10px;
 }
 ::-webkit-scrollbar-track {
   visibility: none;
 }
 ::-webkit-scrollbar-thumb {
   background-color: rgba(255, 119, 0, 0.6);
-  width: 7px;
+  width: 10px;
   border-radius: 10px;
 }
